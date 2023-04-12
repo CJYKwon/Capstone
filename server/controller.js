@@ -15,13 +15,13 @@ module.exports = {
             id: globalID
         }
 
-        warrant.push(newWarrant)
+        warrants.push(newWarrant)
         globalID++;
         res.status(200).send(warrants)
     },
     deleteWarrant: (req, res) => {
         const {id} = req.params;
-        let index = warrant.findIndex((elem) => elem.id === +id)
+        let index = warrants.findIndex((elem) => elem.id === +id)
             warrants.splice(index,1)
             res.status(200).send(warrants)
     },
