@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>MOST WANTED</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <header>
+        <h1>MOST WANTED</h1>
+    </header>
+    <main>
+
+    <form>
+        <input 
+            type='text'
+            id="name"
+            placeholder="What's the criminal's name?"/>
+        <input 
+            type='text'
+            id="bounty"
+            placeholder='What is the bounty?'/>
+        <input 
+            type='text'
+            id="img"
+            placeholder='Paste an image URL'/>
+        <button>add warrant</button>
+    </form>
+
+    <section id="warrants-container"></section>
+
+    </main>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
