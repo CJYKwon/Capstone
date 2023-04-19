@@ -6,12 +6,11 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
-const{getAllwarrants, createWarrant, deleteWarrant,updateWarrant} = require('./controller')
+const{getWarrants, createWarrant, deleteWarrant,updateWarrant} = require('./controller')
 
-app.get('/api/MostWanted', getAllwarrants)
-app.post('/api/MostWanted', createWarrant)
-app.put('/api/MostWanted:id', updateWarrant)
-app.delete('/api/MostWanted/:id', deleteWarrant)
+app.get('/api/mostwanted', getWarrants)
+app.post('/api/mostwanted', createWarrant)
+app.delete('/api/mostwanted/:id', deleteWarrant)
+app.put('/api/mostwanted/:id', updateWarrant)
 
 app.listen(5000, () => console.log('Hope it works'))
-
