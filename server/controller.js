@@ -36,7 +36,7 @@ module.exports = {
         if(type === 'minus' && warrants[index].bounty > 10000) {
             warrants[index].bounty -= 10000;
             res.status(200).send(warrants)
-        } else if (type === 'plus' && warrants[index.bounty < 1000000]) {
+        } else if (type === 'plus' && warrants[index].bounty < 1000000) {
             warrants[index].bounty += 10000;
             res.status(200).send(warrants)
         }else {

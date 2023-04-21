@@ -53,14 +53,15 @@ form {
 button {
   background-color: transparent;
   width: 75px;
-  height: 45px;
+  height: 35px;
   color: rgb(0, 0, 0);
   border: none;
   margin: 5px;
-  border: 5px black solid;
+  border: 3px black solid;
   border-radius: 12px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  text-size-adjust:initial;
 }
   
 input[type='text'] {
@@ -84,14 +85,14 @@ input[type='text'] {
 }
   
 #warrants-container {
+  width: 100%; 
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
+  margin: 5px;
 }
   
 .warrant-picture {
-  width: 300px; 
+  width: 250px; 
   height: 300px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -107,11 +108,14 @@ input[type='text'] {
   border-radius: 12px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  font-size:xx-large;
+  color: #000000;
 }
   
 .warrant-name {
   font-size: 18px;
   margin: 5px 0;
+  color:#000000
 }
   
 .warrant-bounty {
@@ -127,7 +131,8 @@ input[type='text'] {
 }
   
 .btns-container > button {
-  width: 20px;
+  width: 35px;
+  height:35px;
 }
 
 div {
