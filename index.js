@@ -37,7 +37,7 @@ function createWarrantCard(warrant) {
     warrantCard.classList.add('warrant-card')
 
     warrantCard.innerHTML = `<img alt='warrant picture' src=${warrant.imageURL} class="warrant-picture"/>
-    <p class="warrant"><*${warrant.name}*></p>
+    <p class="warrant">${warrant.name}</p>
     <h2>INCREASE/DECREASE</h2>
     <h2>BOUNTIES</h2>
     <div class="btns-container">
